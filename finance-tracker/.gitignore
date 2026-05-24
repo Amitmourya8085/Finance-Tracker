@@ -4,6 +4,15 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+
+*.log
+*.class
+*.jar
+
+.idea/
+*.iml
+
+application.properties
 ### STS ###
 .apt_generated
 .classpath
