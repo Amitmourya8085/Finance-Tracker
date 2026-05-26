@@ -1,4 +1,4 @@
-```markdown
+
 #  Finance Tracker API
 
 A Spring Boot-based REST API to manage personal finances — track income, expenses, and analyze spending patterns.
