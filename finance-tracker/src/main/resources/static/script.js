@@ -1,9 +1,7 @@
 const USER_API = "http://localhost:8080/users";
 const TRANSACTION_API = "http://localhost:8080/transaction";
 
-// ======================
-// 👤 CREATE USER
-// ======================
+
 window.createUser = async function () {
     try {
         const name = document.getElementById("name").value;
@@ -38,9 +36,6 @@ window.createUser = async function () {
     }
 };
 
-// ======================
-// 📥 LOAD USERS
-// ======================
 async function loadUsers() {
     try {
         const res = await fetch(USER_API);
@@ -70,9 +65,7 @@ async function loadUsers() {
     }
 }
 
-// ======================
-// 💰 ADD TRANSACTION
-// ======================
+
 window.addTransaction = async function () {
     try {
         const amount = document.getElementById("amount").value;
@@ -127,9 +120,6 @@ window.addTransaction = async function () {
     }
 };
 
-// ======================
-// 📋 LOAD TRANSACTIONS
-// ======================
 async function loadTransactions() {
     try {
         const userId = document.getElementById("userSelect").value;
@@ -165,9 +155,7 @@ async function loadTransactions() {
     }
 }
 
-// ======================
-// 💰 GET BALANCE
-// ======================
+
 async function getBalance() {
     try {
         const userId = document.getElementById("userSelect").value;
@@ -192,9 +180,6 @@ async function getBalance() {
     }
 }
 
-// ======================
-// 🚀 ON LOAD
-// ======================
 window.onload = function () {
     loadUsers();
 
