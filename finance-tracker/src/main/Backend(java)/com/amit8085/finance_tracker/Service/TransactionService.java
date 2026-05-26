@@ -60,7 +60,7 @@ public class TransactionService {
 
         return trepo.findByUserId(userId);
     }
-    //  CALCULATE BALANCE (Improved)
+    //  CALCULATE BALANCE
     public double calculateBalance(Long userId) {
 
         List<Transaction> transactions = trepo.findByUserId(userId);
