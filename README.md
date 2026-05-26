@@ -55,16 +55,22 @@ App runs on:
 
 http://localhost:8080
 📬 API Endpoints
+
 ➕ Add Transaction
 POST /api/transactions
+
 📄 Get All Transactions
 GET /api/transactions
+
 🔍 Get by ID
 GET /api/transactions/{id}
+
 ✏️ Update Transaction
 PUT /api/transactions/{id}
+
 ❌ Delete Transaction
 DELETE /api/transactions/{id}
+
 🧾 Sample Request
 {
   "title": "Salary",
@@ -74,13 +80,18 @@ DELETE /api/transactions/{id}
   "date": "2026-05-24"
 }
 📌 Future Improvements
-🔐 JWT Authentication
-👤 User-based accounts
-📊 Dashboard with charts
-🌐 Frontend (HTML/CSS/JS or React)
-🤖 AI Insights (Spending Analysis)
-🙋‍♂️ Author
 
+🔐 JWT Authentication
+
+👤 User-based accounts
+
+📊 Dashboard with charts
+
+🌐 Frontend (HTML/CSS/JS or React)
+
+🤖 AI Insights (Spending Analysis)
+
+🙋‍♂️ Author
 Amit Mourya
 🚀 Backend Developer (Spring Boot Learner)
 
