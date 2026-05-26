@@ -23,7 +23,7 @@ window.createUser = async function () {
             throw new Error(err);
         }
 
-        alert("User Created ✅");
+        alert("User Created ");
 
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
@@ -32,7 +32,7 @@ window.createUser = async function () {
 
     } catch (err) {
         console.error(err);
-        alert("Error creating user ❌");
+        alert("Error creating user ");
     }
 };
 
@@ -61,7 +61,7 @@ async function loadUsers() {
 
     } catch (err) {
         console.error(err);
-        alert("Failed to load users ❌");
+        alert("Failed to load users ");
     }
 }
 
@@ -75,7 +75,7 @@ window.addTransaction = async function () {
         const userId = document.getElementById("userSelect").value;
 
         if (!amount || !type || !category || !date || !userId) {
-            alert("Fill all fields ⚠️");
+            alert("Fill all fields ️");
             return;
         }
 
@@ -104,7 +104,7 @@ window.addTransaction = async function () {
         const result = await res.json().catch(() => null);
         console.log("Response:", result);
 
-        alert("Transaction Added ✅");
+        alert("Transaction Added ");
 
         // clear form
         document.getElementById("amount").value = "";
@@ -116,7 +116,7 @@ window.addTransaction = async function () {
 
     } catch (err) {
         console.error(err);
-        alert("Error adding transaction ❌\n" + err.message);
+        alert("Error adding transaction " + err.message);
     }
 };
 
@@ -151,7 +151,7 @@ async function loadTransactions() {
 
     } catch (err) {
         console.error(err);
-        alert("Error loading transactions ❌");
+        alert("Error loading transactions ");
     }
 }
 
@@ -176,7 +176,7 @@ async function getBalance() {
 
     } catch (err) {
         console.error(err);
-        alert("Error fetching balance ❌");
+        alert("Error fetching balance ");
     }
 }
 
